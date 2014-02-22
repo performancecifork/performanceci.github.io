@@ -1,13 +1,13 @@
 ---
 layout: default
-title: PerformanceCI &bull; Continuous performance testing for your github project
+title: PerformanceCI &bull; Continuous performance testing for your project
 overview: true
 ---
 
 <section class="intro">
   <div class="grid">
     <div class="unit whole center-on-mobiles">
-      <p class="first">Transform your plain text into static&nbsp;websites and&nbsp;blogs.</p>
+      <p class="first">Know before your application becomes slow and costs you time and money</p>
     </div>
   </div>
 </section>
@@ -16,21 +16,23 @@ overview: true
     <div class="unit one-third">
       <h2>Simple</h2>
       <p>
-        No more databases, comment moderation, or pesky updates to install—just <em>your content</em>.
+        No setup to worry about.  Just point at your github project containing a <a href="http://docs.docker.io/en/latest/reference/builder/"><em>Dockerfile</em></a>.
       </p>
-      <a href="/docs/usage/" class="">How Jekyll works &rarr;</a>
+      <a href="/docs/usage/" class="">How PerformanceCI works &rarr;</a>
     </div>
     <div class="unit one-third">
-      <h2>Static</h2>
-      <p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> (or <a href="http://textile.sitemonks.com/">Textile</a>), <a href="http://wiki.shopify.com/Liquid">Liquid</a>, HTML <span class="amp">&amp;</span> CSS go in. Static sites come out ready for deployment.</p>
-      <a href="/docs/templates/" class="">Jekyll template guide &rarr;</a>
-    </div>
-    <div class="unit one-third">
-      <h2>Blog-aware</h2>
+      <h2>Continuous</h2>
       <p>
-        Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
+        We will watch your repository for changes, pull them down, run your Dockerfile to build and launch your application, and run your performance tests against it - Continuously.
       </p>
-      <a href="/docs/migrations/" class="">Migrate your blog &rarr;</a>
+      <a href="/docs/templates/" class="">Just like TravisCI &rarr;</a>
+    </div>
+    <div class="unit one-third">
+      <h2>Visual</h2>
+      <p>
+        Easily identify performance issues and trace it quickly to its root cause before technical debt builds up.
+      </p>
+      <a href="/docs/migrations/" class="">See your performance problems &rarr;</a>
     </div>
     <div class="clear"></div>
   </div>
@@ -46,25 +48,25 @@ overview: true
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">gem install jekyll</span>
+          <span class="command">vi Dockerfile</span>
         </p>
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">jekyll new my-awesome-site</span>
+          <span class="command">git commit -a -m "Dockerfile for PerformanceCI"</span>
         </p>
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">cd my-awesome-site</span>
+          <span class="command">git push origin</span>
         </p>
         <p class="line">
-          <span class="path">~/my-awesome-site</span>
-          <span class="prompt">$</span>
-          <span class="command">jekyll serve</span>
+          <span class="path">http://www.performanceci.com</span>
+          <span class="prompt"></span>
+          <span class="command">New Repository</span>
         </p>
         <p class="line">
-          <span class="output"># => Now browse to http://localhost:4000</span>
+          <span class="output"># => Now browse to http://www.performanceci.com</span>
         </p>
       </div>
     </div>
@@ -78,9 +80,9 @@ overview: true
         <div class="unit whole center-on-mobiles">
           <img src="img/octojekyll.png" alt="Free Jekyll hosting on GitHub Pages">
           <div class="pane-content">
-            <h2 class="center-on-mobiles"><strong>Free hosting</strong> with GitHub Pages</h2>
-            <p>Sick of dealing with hosting companies? <a href="http://pages.github.com/">GitHub Pages</a> are <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">custom domain name</a> and&nbsp;all.</p>
-            <a href="http://pages.github.com/" class="">Learn more about GitHub Pages &rarr;</a>
+            <h2 class="center-on-mobiles"><strong>Connect</strong> to GitHub and run in Docker</h2>
+            <p>Simplify your setup and use your GitHub id to login <a href="http://www.performanceci.com/users/new/">PerformanceCI login</a> and get started, so you can easily monitor your projects performance.</p>
+            <a href="http://www.docker.com" class="">Learn more about Docker &rarr;</a>
           </div>
         </div>
         <div class="clear"></div>
