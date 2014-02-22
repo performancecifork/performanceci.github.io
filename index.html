@@ -7,7 +7,7 @@ overview: true
 <section class="intro">
   <div class="grid">
     <div class="unit whole center-on-mobiles">
-      <p class="first">Know before your application becomes slow and costs you time and money</p>
+      <p class="first">Save yourself time and money chasing down slow applications in production</p>
     </div>
   </div>
 </section>
@@ -16,7 +16,7 @@ overview: true
     <div class="unit one-third">
       <h2>Simple</h2>
       <p>
-        No setup to worry about.  Just point at your github project containing a <a href="http://docs.docker.io/en/latest/reference/builder/"><em>Dockerfile</em></a>.
+        No setup to worry about.  Just point at your github project containing a <a href="http://docs.docker.io/en/latest/reference/builder/"><em>Dockerfile</em></a> and a PerformanceCI <a href="http://docs.docker.io/en/latest/reference/builder/"><em>config file</em></a>.
       </p>
       <a href="/docs/usage/" class="">How PerformanceCI works &rarr;</a>
     </div>
@@ -25,14 +25,14 @@ overview: true
       <p>
         We will watch your repository for changes, pull them down, run your Dockerfile to build and launch your application, and run your performance tests against it - Continuously.
       </p>
-      <a href="/docs/templates/" class="">Just like TravisCI &rarr;</a>
+      <a href="/docs/templates/" class="">Fits your Agile workflow &rarr;</a>
     </div>
     <div class="unit one-third">
       <h2>Visual</h2>
       <p>
         Easily identify performance issues and trace it quickly to its root cause before technical debt builds up.
       </p>
-      <a href="/docs/migrations/" class="">See your performance problems &rarr;</a>
+      <a href="/docs/migrations/" class="">Catch performance problems early &rarr;</a>
     </div>
     <div class="clear"></div>
   </div>
@@ -53,7 +53,12 @@ overview: true
         <p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">git commit -a -m "Dockerfile for PerformanceCI"</span>
+          <span class="command">vi perfci.yaml</span>
+        </p>
+        <p class="line">
+          <span class="path">~</span>
+          <span class="prompt">$</span>
+          <span class="command">git commit -a -m Dockerfile</span>
         </p>
         <p class="line">
           <span class="path">~</span>
@@ -61,12 +66,7 @@ overview: true
           <span class="command">git push origin</span>
         </p>
         <p class="line">
-          <span class="path">http://www.performanceci.com</span>
-          <span class="prompt"></span>
-          <span class="command">New Repository</span>
-        </p>
-        <p class="line">
-          <span class="output"># => Now browse to http://www.performanceci.com</span>
+          <span class="output"># => Now connect to http://www.performanceci.com</span>
         </p>
       </div>
     </div>
@@ -81,8 +81,8 @@ overview: true
           <img src="img/octojekyll.png" alt="Free Jekyll hosting on GitHub Pages">
           <div class="pane-content">
             <h2 class="center-on-mobiles"><strong>Connect</strong> to GitHub and run in Docker</h2>
-            <p>Simplify your setup and use your GitHub id to login <a href="http://www.performanceci.com/users/new/">PerformanceCI login</a> and get started, so you can easily monitor your projects performance.</p>
-            <a href="http://www.docker.com" class="">Learn more about Docker &rarr;</a>
+            <p>Simplify your setup and use your GitHub id to login <a href="http://www.performanceci.com/users/new/">PerformanceCI</a> login and get started, so you can easily monitor your projects performance.</p>
+            <a href="http://www.docker.com" class="">Learn more about PerformanceCI &rarr;</a>
           </div>
         </div>
         <div class="clear"></div>
